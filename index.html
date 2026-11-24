@@ -250,6 +250,7 @@ body.skip-pre .hero-title .wd>span{animation-delay:calc(var(--i)*70ms + .1s)}
 #artifacts-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:16px}
 .proj{display:flex;flex-direction:column;justify-content:space-between;grid-column:span 2;padding:0;--c:var(--mint)}
 .proj.span4{grid-column:span 4}
+.proj.span6{grid-column:span 6}
 .proj-cover{position:relative;height:150px;overflow:hidden;border-bottom:1px solid var(--line);
   background:radial-gradient(120% 140% at 0% 0%,color-mix(in srgb,var(--c) 38%,transparent),transparent 62%),radial-gradient(90% 120% at 100% 100%,color-mix(in srgb,var(--c) 14%,transparent),transparent 70%)}
 .proj-cover::after{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.06) 1px,transparent 1px);background-size:28px 28px;
@@ -446,7 +447,7 @@ footer a:hover{color:var(--text)}
   .exp-side{position:static}
   .bento .b-4,.bento .b-2{grid-column:span 3}
   #artifacts-grid{grid-template-columns:repeat(2,1fr)}
-  .proj,.proj.span4{grid-column:span 1}.proj.span4{grid-column:span 2}
+  .proj,.proj.span4{grid-column:span 1}.proj.span4,.proj.span6{grid-column:span 2}
   .flow{grid-template-columns:repeat(2,1fr)}
   .flow-node::after{display:none}
   .skills{grid-template-columns:repeat(2,1fr)}
@@ -461,7 +462,7 @@ footer a:hover{color:var(--text)}
   .bento .b-4,.bento .b-3,.bento .b-2,.b-6{grid-column:span 6}
   .cap.wide{grid-template-columns:1fr;gap:18px}
   #artifacts-grid{grid-template-columns:1fr}
-  .proj,.proj.span4{grid-column:span 1}
+  .proj,.proj.span4,.proj.span6{grid-column:span 1}
   .proj-body.row{grid-template-columns:1fr}
   .flow{grid-template-columns:1fr}
   .flow-node{display:grid}
@@ -586,7 +587,7 @@ body.skip-pre #preloader{display:none}
 
     <div class="stats reveal">
       <div class="stat"><b data-count="50" data-suffix="+">50+</b><span>product creatives &amp; banners designed</span></div>
-      <div class="stat"><b data-count="3" data-prefix="&lt;" data-suffix=" min">&lt;3 min</b><span>to launch a chatbot on EmbedEase.in</span></div>
+      <div class="stat"><b data-count="3">3</b><span>live products — EmbedEase, BlinkWear &amp; Pune Ganpati LIVE</span></div>
       <div class="stat"><b data-count="3">3</b><span>ad platforms — Meta, Google &amp; Hotstar</span></div>
       <div class="stat"><b data-count="1">1</b><span>research paper published in IJNRD</span></div>
     </div>
@@ -596,7 +597,7 @@ body.skip-pre #preloader{display:none}
 <!-- MARQUEE -->
 <div class="marquee" aria-hidden="true">
   <div class="marquee-track" id="marquee-track">
-    <span>AI Automation</span><span>Digital Operations</span><span>EmbedEase.in</span><span>n8n Workflows</span><span>Meta &amp; Google Ads</span><span>Data Analytics</span><span>Figma Product UI</span><span>IJNRD Author</span>
+    <span>AI Automation</span><span>Digital Operations</span><span>EmbedEase.in</span><span>BlinkWear.in</span><span>Pune Ganpati LIVE</span><span>n8n Workflows</span><span>Meta &amp; Google Ads</span><span>Data Analytics</span><span>Figma Product UI</span><span>IJNRD Author</span>
   </div>
 </div>
 
@@ -628,9 +629,11 @@ body.skip-pre #preloader{display:none}
         <div class="card-title"><span>● Currently</span><span class="pill">Gemini-powered</span></div>
         <div class="now-list">
           <div class="now-item"><span><span class="dot"></span>EmbedEase.in</span><em>Live SaaS</em></div>
-          <div class="now-item"><span><span class="dot amber"></span>MoneyLens app</span><em>Room DB</em></div>
+          <div class="now-item"><span><span class="dot rose"></span>BlinkWear.in</span><em>Live · Pune / Bhopal</em></div>
+          <div class="now-item"><span><span class="dot amber"></span>Pune Ganpati LIVE</span><em>Live · Events</em></div>
+          <div class="now-item"><span><span class="dot iris"></span>MoneyLens app</span><em>Room DB</em></div>
           <div class="now-item"><span><span class="dot"></span>AI automations</span><em>n8n / WhatsApp</em></div>
-          <div class="now-item"><span><span class="dot rose"></span>Digital operations</span><em>ANPS Shopping</em></div>
+          <div class="now-item"><span><span class="dot sky"></span>Digital operations</span><em>ANPS Shopping</em></div>
           <div class="now-item"><span><span class="dot sky"></span>Research</span><em>IJNRD 2025</em></div>
         </div>
       </div>
@@ -660,7 +663,7 @@ body.skip-pre #preloader{display:none}
         <div class="ico"><i class="fa-solid fa-cube"></i></div>
         <h3>Product Studio</h3>
         <div class="sub">Vibe coding to production</div>
-        <p>Turning raw ideas into functional software like EmbedEase.in and MoneyLens — AI-assisted speed, crisp user architecture.</p>
+        <p>Turning raw ideas into live software — EmbedEase.in, BlinkWear.in, Pune Ganpati LIVE and MoneyLens — with AI-assisted speed and crisp user architecture.</p>
       </article>
       <article class="card cap b-2 lift reveal" style="--c:var(--peach)">
         <span class="idx">01.03</span>
@@ -719,13 +722,13 @@ body.skip-pre #preloader{display:none}
           <div class="proj-cover"><div class="tagrow"><span class="status"><span class="dot"></span>Live SaaS</span><span class="mono" style="font-size:11px;color:var(--muted)">EE-01</span></div><div class="num">01</div><div class="ico"><i class="fa-solid fa-comments"></i></div></div>
           <div class="proj-body">
             <h3>EmbedEase.in</h3>
-            <div class="sub">AI chatbot platform for websites</div>
-            <p>Built and launched an end-to-end AI chatbot platform that lets businesses deploy custom-trained chatbots on their website with zero code in under 3 minutes.</p>
-            <ul><li>Rapid website script widget injection</li><li>Vibe coding &amp; AI-assisted development</li></ul>
+            <div class="sub">Growth &amp; AI chatbot platform</div>
+            <p>A growth platform for Indian businesses, built under Roopya Technologies: an AI chatbot that answers only from your own knowledge base, WhatsApp campaigns, and cost-per-lead tracking that ties ad spend to individual leads.</p>
+            <ul><li>RAG chatbot — auto-detects English, Hindi &amp; Hinglish</li><li>WhatsApp automation, Kanban CRM &amp; CPL / ROAS tracking</li></ul>
           </div>
         </div>
         <div class="proj-foot">
-          <div class="tags"><span>AI Automation</span><span>Vibe coding</span><span>Web dev</span></div>
+          <div class="tags"><span>AI chatbot</span><span>WhatsApp API</span><span>CPL tracking</span></div>
           <div class="proj-actions">
             <a href="https://embedease.in" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Live site <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
             <button class="btn btn-sm" onclick="openArtifactModal('embedease')">Details</button>
@@ -733,9 +736,47 @@ body.skip-pre #preloader{display:none}
         </div>
       </article>
 
-      <article class="card proj artifact-card reveal" data-category="saas" style="--c:var(--peach);--d:.06s">
+      <article class="card proj artifact-card reveal" data-category="saas" style="--c:var(--rose);--d:.06s">
         <div>
-          <div class="proj-cover"><div class="tagrow"><span class="status"><span class="dot amber"></span>Build · Mobile</span><span class="mono" style="font-size:11px;color:var(--muted)">ML-02</span></div><div class="num">02</div><div class="ico"><i class="fa-solid fa-wallet"></i></div></div>
+          <div class="proj-cover"><div class="tagrow"><span class="status"><span class="dot rose"></span>Live marketplace</span><span class="mono" style="font-size:11px;color:var(--muted)">BW-02</span></div><div class="num">02</div><div class="ico"><i class="fa-solid fa-shirt"></i></div></div>
+          <div class="proj-body">
+            <h3>BlinkWear.in</h3>
+            <div class="sub">Fashion rental &amp; resale marketplace</div>
+            <p>Rent designer lehengas, sherwanis, tuxedos and gowns at a fraction of retail price — sanitised, dry-cleaned and delivered to your door in Pune &amp; Bhopal. Wardrobe owners can “Lend &amp; Earn”.</p>
+            <ul><li>Dry-clean + UV sterilisation, doorstep delivery &amp; reverse pickup</li><li>Refundable deposits, wishlist, cart &amp; seller onboarding</li></ul>
+          </div>
+        </div>
+        <div class="proj-foot">
+          <div class="tags"><span>Marketplace</span><span>Fashion rental</span><span>Pune · Bhopal</span></div>
+          <div class="proj-actions">
+            <a href="https://blinkwear.in" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Live site <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            <button class="btn btn-sm" onclick="openArtifactModal('blinkwear')">Details</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="card proj artifact-card reveal" data-category="saas" style="--c:var(--peach);--d:.12s">
+        <div>
+          <div class="proj-cover"><div class="tagrow"><span class="status"><span class="dot amber"></span>Live platform</span><span class="mono" style="font-size:11px;color:var(--muted)">PG-03</span></div><div class="num">03</div><div class="ico"><i class="fa-solid fa-calendar-days"></i></div></div>
+          <div class="proj-body">
+            <h3>Pune Ganpati LIVE</h3>
+            <div class="sub">Events, festivals &amp; passes in Pune</div>
+            <p>A city events hub for Pune — garba and dandiya nights, cultural shows and festival guides in one place, plus a free listing tool for organisers to publish events and sell passes.</p>
+            <ul><li>Ganpati mandal guide: maps, timings, metro routes &amp; crowd reports</li><li>Navratri 2026 &amp; Diwali 2026 festival guides</li></ul>
+          </div>
+        </div>
+        <div class="proj-foot">
+          <div class="tags"><span>Events</span><span>Pune</span><span>Local SEO</span></div>
+          <div class="proj-actions">
+            <a href="https://puneganpatilive.in" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Live site <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            <button class="btn btn-sm" onclick="openArtifactModal('puneganpati')">Details</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="card proj artifact-card reveal" data-category="saas" style="--c:var(--peach);--d:0s">
+        <div>
+          <div class="proj-cover"><div class="tagrow"><span class="status"><span class="dot amber"></span>Build · Mobile</span><span class="mono" style="font-size:11px;color:var(--muted)">ML-04</span></div><div class="num">04</div><div class="ico"><i class="fa-solid fa-wallet"></i></div></div>
           <div class="proj-body">
             <h3>MoneyLens</h3>
             <div class="sub">Personal finance application</div>
@@ -749,9 +790,9 @@ body.skip-pre #preloader{display:none}
         </div>
       </article>
 
-      <article class="card proj artifact-card reveal" data-category="design ai" style="--c:var(--iris);--d:.12s">
+      <article class="card proj artifact-card reveal" data-category="design ai" style="--c:var(--iris);--d:.06s">
         <div>
-          <div class="proj-cover"><div class="tagrow"><span class="status"><span class="dot iris"></span>Prototype</span><span class="mono" style="font-size:11px;color:var(--muted)">BB-03</span></div><div class="num">03</div><div class="ico"><i class="fa-solid fa-layer-group"></i></div></div>
+          <div class="proj-cover"><div class="tagrow"><span class="status"><span class="dot iris"></span>Prototype</span><span class="mono" style="font-size:11px;color:var(--muted)">BB-05</span></div><div class="num">05</div><div class="ico"><i class="fa-solid fa-layer-group"></i></div></div>
           <div class="proj-body">
             <h3>BrainBox AI</h3>
             <div class="sub">Multi-AI workspace interface</div>
@@ -767,7 +808,7 @@ body.skip-pre #preloader{display:none}
 
       <article class="card proj artifact-card reveal" data-category="data" style="--c:var(--sky)">
         <div>
-          <div class="proj-cover"><div class="tagrow"><span class="status"><span class="dot sky"></span>Data analytics</span><span class="mono" style="font-size:11px;color:var(--muted)">CC-04</span></div><div class="num">04</div><div class="ico"><i class="fa-solid fa-chart-pie"></i></div></div>
+          <div class="proj-cover"><div class="tagrow"><span class="status"><span class="dot sky"></span>Data analytics</span><span class="mono" style="font-size:11px;color:var(--muted)">CC-06</span></div><div class="num">06</div><div class="ico"><i class="fa-solid fa-chart-pie"></i></div></div>
           <div class="proj-body">
             <h3>Credit Card Analytics</h3>
             <div class="sub">Spending behaviour dashboard</div>
@@ -781,9 +822,9 @@ body.skip-pre #preloader{display:none}
         </div>
       </article>
 
-      <article class="card proj span4 artifact-card reveal" data-category="ai" style="--c:var(--rose);--d:.06s">
+      <article class="card proj span6 artifact-card reveal" data-category="ai" style="--c:var(--rose);--d:0s">
         <div>
-          <div class="proj-cover"><div class="tagrow"><span class="status"><span class="dot rose"></span>Research · IJNRD 2025</span><span class="mono" style="font-size:11px;color:var(--muted)">PM-05</span></div><div class="num">05</div><div class="ico"><i class="fa-solid fa-flask"></i></div></div>
+          <div class="proj-cover"><div class="tagrow"><span class="status"><span class="dot rose"></span>Research · IJNRD 2025</span><span class="mono" style="font-size:11px;color:var(--muted)">PM-07</span></div><div class="num">07</div><div class="ico"><i class="fa-solid fa-flask"></i></div></div>
           <div class="proj-body">
             <h3>AI-Powered Virtual Project Managers</h3>
             <div class="sub">Automating task allocation &amp; risk prediction</div>
@@ -913,21 +954,31 @@ body.skip-pre #preloader{display:none}
     <div class="log">
       <div class="log-row reveal">
         <div class="no">01</div>
-        <div><h3>EmbedEase.in Chatbot SaaS</h3><p>Deployable AI chatbots for small-business websites with custom prompt configuration.</p></div>
-        <div class="meta"><span class="status"><span class="dot"></span>Live</span><span class="pill">AI-assisted</span><span class="pill">Vibe-built</span></div>
+        <div><h3>EmbedEase.in Growth Platform</h3><p>AI chatbot, WhatsApp campaigns and cost-per-lead tracking for Indian businesses.</p></div>
+        <div class="meta"><span class="status"><span class="dot"></span>Live</span><span class="pill">AI-assisted</span><span class="pill">Founder</span></div>
       </div>
       <div class="log-row reveal">
         <div class="no">02</div>
-        <div><h3>MoneyLens Android Finance App</h3><p>Local-first expense tracker built with Android Room DB and mathematical balance verifiers.</p></div>
-        <div class="meta"><span class="status"><span class="dot amber"></span>Build</span><span class="pill">AI-assisted</span></div>
+        <div><h3>BlinkWear.in Rental Marketplace</h3><p>Designer occasionwear rental &amp; resale with sanitised doorstep delivery in Pune and Bhopal.</p></div>
+        <div class="meta"><span class="status"><span class="dot rose"></span>Live</span><span class="pill">Marketplace</span><span class="pill">Founder</span></div>
       </div>
       <div class="log-row reveal">
         <div class="no">03</div>
+        <div><h3>Pune Ganpati LIVE</h3><p>Events, festivals and passes hub for Pune — mandal guide, garba nights, free organiser listings.</p></div>
+        <div class="meta"><span class="status"><span class="dot amber"></span>Live</span><span class="pill">Events</span><span class="pill">Local SEO</span></div>
+      </div>
+      <div class="log-row reveal">
+        <div class="no">04</div>
+        <div><h3>MoneyLens Android Finance App</h3><p>Local-first expense tracker built using Android Room DB and mathematical balance verifiers.</p></div>
+        <div class="meta"><span class="status"><span class="dot iris"></span>Build</span><span class="pill">AI-assisted</span></div>
+      </div>
+      <div class="log-row reveal">
+        <div class="no">05</div>
         <div><h3>BrainBox Multi-LLM Workspace</h3><p>Figma high-fidelity product UI prototype combining ChatGPT, Gemini, Grok &amp; Claude.</p></div>
         <div class="meta"><span class="status"><span class="dot iris"></span>Prototype</span><span class="pill">Figma UI</span></div>
       </div>
       <div class="log-row reveal">
-        <div class="no">04</div>
+        <div class="no">06</div>
         <div><h3>AI Virtual Project Managers Research</h3><p>Paper published in IJNRD on automated task allocation and delay forecasting.</p></div>
         <div class="meta"><span class="status"><span class="dot sky"></span>Published 2025</span><span class="pill">IJNRD</span></div>
       </div>
@@ -1001,6 +1052,8 @@ body.skip-pre #preloader{display:none}
           <a href="https://www.linkedin.com/in/shubham-shrivastava-239975249/" target="_blank" rel="noopener" class="btn btn-sm"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
           <a href="https://github.com/shubhamshri1011" target="_blank" rel="noopener" class="btn btn-sm"><i class="fa-brands fa-github"></i> GitHub</a>
           <a href="https://embedease.in" target="_blank" rel="noopener" class="btn btn-sm"><i class="fa-solid fa-bolt text-peach"></i> EmbedEase.in</a>
+          <a href="https://blinkwear.in" target="_blank" rel="noopener" class="btn btn-sm"><i class="fa-solid fa-shirt text-rose"></i> BlinkWear.in</a>
+          <a href="https://puneganpatilive.in" target="_blank" rel="noopener" class="btn btn-sm"><i class="fa-solid fa-calendar-days text-peach"></i> Pune Ganpati LIVE</a>
         </div>
       </div>
 
@@ -1248,10 +1301,12 @@ SHUBHAM SHRIVASTAVA FACT SHEET:
 - Internship: Exide Industries Limited (Dec 2024 - Mar 2025, Bhopal) IT Support Intern.
 - Program: Accenture (Forage) Data Analytics Virtual Experience (Power BI).
 - Key Projects:
-  1. EmbedEase.in (LIVE SAAS): AI chatbot platform for websites with 3-minute zero-code setup (https://embedease.in).
+  1. EmbedEase.in (LIVE SAAS): growth & AI chatbot platform for Indian businesses by Roopya Technologies - RAG chatbot (English/Hindi/Hinglish), WhatsApp campaigns, CPL/ROAS tracking, built-in CRM; plans from Rs 999/month (https://embedease.in).
   2. MoneyLens: Privacy-first Android finance application using Room DB.
   3. BrainBox AI: Figma multi-LLM workspace prototype.
   4. Credit Card Usage Analysis Dashboard (Power BI).
+  5. BlinkWear.in (LIVE): fashion rental & resale marketplace in Pune and Bhopal - lehengas, sherwanis, gowns; dry-cleaned and UV-sterilised, doorstep delivery and reverse pickup, Lend & Earn for sellers; founded by Shubham (https://blinkwear.in).
+  6. Pune Ganpati LIVE (LIVE): events, festivals and passes site for Pune - garba nights, Navratri/Diwali 2026 guides, Ganpati mandal guide (22 mandals), free organiser listings (https://puneganpatilive.in).
 - Skills: n8n, Gemini API, WhatsApp API, Webhooks, Meta Ads, Google Ads, Power BI, SQL, Python, Figma, Canva.`;
 
             const payload = {
@@ -1284,7 +1339,7 @@ SHUBHAM SHRIVASTAVA FACT SHEET:
 • **Digital Operations:** E-commerce seller/buyer QA, onboarding, platform operations.
 • **Digital Marketing:** Meta Ads, Google Ads, Hotstar Ads, and 50+ ad creatives.
 • **Data Analytics:** Power BI dashboards, SQL, Python, Advanced Excel.
-• **Products:** Built [EmbedEase.in](https://embedease.in) (SaaS) and MoneyLens (Android Room DB).`;
+• **Products:** Built [EmbedEase.in](https://embedease.in), [BlinkWear.in](https://blinkwear.in) and [Pune Ganpati LIVE](https://puneganpatilive.in), plus MoneyLens (Android Room DB).`;
             }
 
             if (q.includes('anps') || q.includes('experience') || q.includes('role') || q.includes('work')) {
@@ -1297,8 +1352,8 @@ SHUBHAM SHRIVASTAVA FACT SHEET:
 
             if (q.includes('embedease') || q.includes('saas') || q.includes('chatbot')) {
                 return `**EmbedEase.in – AI Chatbot Platform** (LIVE SAAS):
-• Enables business owners to deploy custom-trained AI chatbots onto websites with zero code setup in under 3 minutes.
-• Features custom prompt configuration and vibe-coded AI development.
+• Growth platform by Roopya Technologies: AI chatbot (English, Hindi & Hinglish) that answers only from the business's knowledge base.
+• WhatsApp campaigns, built-in CRM and cost-per-lead / ROAS tracking; plans start at ₹999/month.
 • **Live Link:** [Visit EmbedEase.in ↗](https://embedease.in)`;
             }
 
@@ -1308,6 +1363,22 @@ SHUBHAM SHRIVASTAVA FACT SHEET:
 • **Gemini API & LLMs:** Multi-modal analysis, custom prompts, and structured output.
 • **WhatsApp Cloud API:** Autonomous Q&A chatbot engines.
 • **Zapier & Webhooks:** Multi-platform data synchronization.`;
+            }
+
+            if (q.includes('blinkwear') || q.includes('blink') || q.includes('rental') || q.includes('lehenga')) {
+                return `**BlinkWear.in** (LIVE marketplace):
+• Fashion rental & resale for lehengas, sherwanis, tuxedos and gowns in **Pune & Bhopal**.
+• Dry-cleaned, UV-sterilised outfits with doorstep delivery and reverse pickup; refundable deposits.
+• "Lend & Earn" lets wardrobe owners list and earn.
+• **Live Link:** [Visit BlinkWear.in ↗](https://blinkwear.in)`;
+            }
+
+            if (q.includes('ganpati') || q.includes('pune') || q.includes('event') || q.includes('garba')) {
+                return `**Pune Ganpati LIVE** (LIVE platform):
+• Events, festivals and passes in Pune — garba/dandiya nights, shows and festival guides.
+• Ganpati mandal guide (22 mandals) with maps, timings and metro routes; Navratri & Diwali 2026 guides.
+• Organisers can list events for free and sell passes.
+• **Live Link:** [Visit puneganpatilive.in ↗](https://puneganpatilive.in)`;
             }
 
             if (q.includes('hire') || q.includes('why')) {
@@ -1366,16 +1437,40 @@ Return a 3-bullet assessment:
 /* ═══════════════ Project data ═══════════════ */
         const artifactData = {
             embedease: {
-                title: "EmbedEase.in – AI Chatbot Platform",
-                tag: "LIVE SAAS // AI AUTOMATION",
-                desc: "EmbedEase.in allows non-technical business owners to embed custom-trained AI chatbots onto their website using a single line of JavaScript script tags.",
+                title: "EmbedEase.in – Growth & AI Chatbot Platform",
+                tag: "LIVE SAAS // ROOPYA TECHNOLOGIES",
+                desc: "EmbedEase is a growth and marketing platform for Indian businesses — \"marketing that shows you the cost of every lead\". It combines an AI chatbot, WhatsApp campaigns, paid-ad management and cost-per-lead tracking, with customers keeping ownership of their ad accounts and data.",
                 highlights: [
-                    "Zero-code onboarding widget setup in under 3 minutes",
-                    "Custom system prompt tuning for business Q&A",
-                    "Built with AI-assisted development (vibe coding)",
-                    "Live production deployment and ongoing active support"
+                    "AI chatbot via a single script tag — auto-detects English, Hindi & Hinglish and answers only from the business's own knowledge base (RAG)",
+                    "WhatsApp automation: broadcasts, qualification flows, Click-to-WhatsApp attribution and STOP opt-out compliance",
+                    "First- and last-touch tracking (GCLID, FBCLID, UTM) for CPL, CPQL and ROAS, plus a built-in Kanban CRM",
+                    "Plans from ₹999/month, with a reseller tier for agencies and multi-brand operators"
                 ],
                 link: "https://embedease.in"
+            },
+            blinkwear: {
+                title: "BlinkWear.in – Fashion Rental & Resale Marketplace",
+                tag: "LIVE MARKETPLACE // PUNE & BHOPAL",
+                desc: "BlinkWear.in is a rental and resale marketplace for India's celebrations — designer lehengas, sherwanis, tuxedos, gowns and festive wear at a fraction of retail price, with a \"Lend & Earn\" option for wardrobe owners.",
+                highlights: [
+                    "Every outfit is dry-cleaned, UV-sterilised and quality-checked before sealed doorstep delivery",
+                    "Reverse pickup after the event and refundable security deposits returned after a quality check",
+                    "Seller onboarding so owners can list their own wardrobe and earn",
+                    "Operates in Pune and Bhopal, with rental, cancellation, deposit and shipping policies published on-site"
+                ],
+                link: "https://blinkwear.in"
+            },
+            puneganpati: {
+                title: "Pune Ganpati LIVE – Events, Festivals & Passes",
+                tag: "LIVE PLATFORM // PUNE",
+                desc: "Pune Ganpati LIVE is a listing site that gathers Pune's garba and dandiya nights, cultural shows, markets and festival guides — with dates, venues and passes — in one place, and lets organisers list events for free.",
+                highlights: [
+                    "Ganpati guide covering 22 Ganeshotsav mandals with maps, timings, metro routes and crowd reports",
+                    "Festival guides for Navratri 2026 and Diwali 2026, plus Today / This weekend / Free filters",
+                    "Organisers can list events free, sell passes through their own payment link and get their own event page",
+                    "Geo-tagged, SEO-ready pages built for local search"
+                ],
+                link: "https://puneganpatilive.in"
             },
             moneylens: {
                 title: "MoneyLens – Personal Finance Application",
@@ -1590,7 +1685,7 @@ async function executeTerminalCmd() {
     } else if (lower === 'skills') {
         out.textContent = 'core stack: n8n, Gemini API, WhatsApp API, Meta Ads, Figma, Power BI, SQL, Python, Excel';
     } else if (lower === 'projects' || lower === 'artifacts') {
-        out.textContent = 'featured: EmbedEase.in (SaaS), MoneyLens (Android), BrainBox AI (Figma), Credit Card Analytics (Power BI)';
+        out.textContent = 'live: EmbedEase.in, BlinkWear.in, puneganpatilive.in | also: MoneyLens (Android), BrainBox AI (Figma), Credit Card Analytics (Power BI)';
     } else if (lower === 'contact') {
         out.textContent = 'email: shubhamshri.1011@gmail.com | phone: +91 9425625642';
     } else if (lower === 'whoami') {
@@ -1737,7 +1832,7 @@ function openArtifactModal(id) {
     const data = artifactData[id];
     if (!modal || !content || !data) return;
     const link = data.link
-        ? `<a href="${data.link}" target="_blank" rel="noopener" class="btn btn-primary" style="margin-top:26px">Launch live SaaS <i class="fa-solid fa-arrow-up-right-from-square"></i></a>` : '';
+        ? `<a href="${data.link}" target="_blank" rel="noopener" class="btn btn-primary" style="margin-top:26px">Visit live site <i class="fa-solid fa-arrow-up-right-from-square"></i></a>` : '';
     content.innerHTML = `
         <div class="tag">${data.tag}</div>
         <h3>${data.title}</h3>
