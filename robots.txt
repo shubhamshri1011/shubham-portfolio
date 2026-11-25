@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://shubhamshrivastava.vercel.app/sitemap.xml
